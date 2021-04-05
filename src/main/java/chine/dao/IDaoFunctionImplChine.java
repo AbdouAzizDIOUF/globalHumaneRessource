@@ -163,11 +163,14 @@ public class IDaoFunctionImplChine implements IDaoFunction<EmployerChine, InfoPr
 
     @Override
     public SalaireChine minSalaireEmployeByMounth(String date) throws SQLException, IOException, ClassNotFoundException {
+        if (this.getSalairesByMounth(date).isEmpty()) return null;
+
         return this.getSalairesByMounth(date).get(0);
     }
 
     @Override
     public SalaireChine maxSalaireEmployeByMounth(String date) throws SQLException, IOException, ClassNotFoundException {
+        if (this.getSalairesByMounth(date).isEmpty()) return null;
         return this.getSalairesByMounth(date).get(getSalairesByMounth(date).size()-1);
     }
 
