@@ -390,7 +390,7 @@ public class Principale extends javax.swing.JFrame {
         jLabel16.setBounds(260, 550, 100, 20);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        jLabel17.setText("Angleterre");
+        jLabel17.setText("Chine");
         getContentPane().add(jLabel17);
         jLabel17.setBounds(260, 585, 100, 20);
 
